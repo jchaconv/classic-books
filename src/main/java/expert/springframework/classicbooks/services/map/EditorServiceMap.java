@@ -2,9 +2,11 @@ package expert.springframework.classicbooks.services.map;
 
 import expert.springframework.classicbooks.model.Editor;
 import expert.springframework.classicbooks.services.EditorService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class EditorServiceMap extends AbstractMapService<Editor, Long> implements EditorService {
 
     @Override

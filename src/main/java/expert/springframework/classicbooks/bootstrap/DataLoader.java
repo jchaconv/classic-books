@@ -4,8 +4,6 @@ import expert.springframework.classicbooks.model.Author;
 import expert.springframework.classicbooks.model.Editor;
 import expert.springframework.classicbooks.services.AuthorService;
 import expert.springframework.classicbooks.services.EditorService;
-import expert.springframework.classicbooks.services.map.AuthorServiceMap;
-import expert.springframework.classicbooks.services.map.EditorServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,10 @@ public class DataLoader implements CommandLineRunner {
     private final AuthorService authorService;
     private final EditorService editorService;
 
-    public DataLoader() {
-        authorService = new AuthorServiceMap();
-        editorService = new EditorServiceMap();
+    //not need Autowired
+    public DataLoader(AuthorService authorService, EditorService editorService) {
+        this.authorService = authorService;
+        this.editorService = editorService;
     }
 
     @Override
