@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Refactor Services to a common Interface.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AbstractMapService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookServiceMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorServiceMap.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Implement Map Based Services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -121,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611930502358</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implement Map Based Services">
+      <created>1611932789692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611932789692</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,7 +148,8 @@
     <MESSAGE value="Implement interfaces for services" />
     <MESSAGE value="Added BaseEntity class" />
     <MESSAGE value="Refactor Services to a common Interface." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Services to a common Interface." />
+    <MESSAGE value="Implement Map Based Services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Map Based Services" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -173,10 +180,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611930510417">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611932837590">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611930510417" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611932837590" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611929466824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
