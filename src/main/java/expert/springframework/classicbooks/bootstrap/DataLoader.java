@@ -46,9 +46,9 @@ public class DataLoader implements CommandLineRunner {
         editorService.save(editor1);
 
         Editor editor2 = new Editor();
-        editor1.setId(2L);
-        editor2.setFirstName("André");
-        editor2.setLastName("Coyné");
+        editor2.setId(2L);
+        editor2.setFirstName("Juan");
+        editor2.setLastName("Espejo");
 
         editorService.save(editor2);
 

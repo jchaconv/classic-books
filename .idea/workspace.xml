@@ -19,11 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding spring config.">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added owner list and updated controller.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/authors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/authors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/authors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/editors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/editors/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611940589388</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added owner list and updated controller.">
+      <created>1611941420849</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611941420849</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,41 +200,42 @@
     <MESSAGE value="adding authors page and controller" />
     <MESSAGE value="adding bootstrap for data." />
     <MESSAGE value="adding spring config." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding spring config." />
+    <MESSAGE value="added owner list and updated controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="added owner list and updated controller." />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611940663290">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611941622577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611940663290" />
-    <state width="1278" height="197" key="GridCell.Tab.0.bottom" timestamp="1611941264871">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941622577" />
+    <state width="1278" height="197" key="GridCell.Tab.0.bottom" timestamp="1611941714540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941264871" />
-    <state width="1278" height="197" key="GridCell.Tab.0.center" timestamp="1611941264870">
+    <state width="1278" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941714540" />
+    <state width="1278" height="197" key="GridCell.Tab.0.center" timestamp="1611941714540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941264870" />
-    <state width="1278" height="197" key="GridCell.Tab.0.left" timestamp="1611941264870">
+    <state width="1278" height="197" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941714540" />
+    <state width="1278" height="197" key="GridCell.Tab.0.left" timestamp="1611941714540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941264870" />
-    <state width="1278" height="197" key="GridCell.Tab.0.right" timestamp="1611941264870">
+    <state width="1278" height="197" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941714540" />
+    <state width="1278" height="197" key="GridCell.Tab.0.right" timestamp="1611941714540">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941264870" />
+    <state width="1278" height="197" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941714540" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611940597613">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611941425910">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611940597613" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941425910" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611938387724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

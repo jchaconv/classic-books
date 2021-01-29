@@ -6,5 +6,25 @@
 </head>
 <body>
 <h1 th:text="'List of Editors ... '">Editor Index Page</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="editor : ${editors}">
+        <td th:text="${editor.id}">Vacío</td>
+        <td th:text="${editor.firstName}">Vacío</td>
+        <td th:text="${editor.lastName}">Vacío</td>
+    </tr>
+    </tbody>
+
+</table>
+
 </body>
 </html>
