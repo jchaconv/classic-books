@@ -3,12 +3,13 @@ package expert.springframework.classicbooks.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@RequestMapping("/authors")
 @Controller
-public class EditorController {
+public class AuthorController {
 
-    @RequestMapping({"/editors", "/editors/index", "/editors/index.html"})
-    public String listEditors() {
-        return "editors/index";
+    @RequestMapping({"", "/", "/index", "/index.html"})
+    public String listAuthors() {
+        return "authors/index";
     }
 
 }

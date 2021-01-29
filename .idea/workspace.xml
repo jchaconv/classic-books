@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Create index page and controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding editors page and controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/AuthorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611933180450</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding editors page and controller">
+      <created>1611933506104</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611933506104</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +165,8 @@
     <MESSAGE value="Refactor Services to a common Interface." />
     <MESSAGE value="Implement Map Based Services" />
     <MESSAGE value="Create index page and controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create index page and controller" />
+    <MESSAGE value="adding editors page and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding editors page and controller" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -168,30 +177,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611932618299" />
-    <state width="1306" height="183" key="GridCell.Tab.0.bottom" timestamp="1611933394564">
+    <state width="1306" height="196" key="GridCell.Tab.0.bottom" timestamp="1611933896787">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="183" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933394564" />
-    <state width="1306" height="183" key="GridCell.Tab.0.center" timestamp="1611933394563">
+    <state width="1306" height="196" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933896787" />
+    <state width="1306" height="196" key="GridCell.Tab.0.center" timestamp="1611933896787">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="183" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933394563" />
-    <state width="1306" height="183" key="GridCell.Tab.0.left" timestamp="1611933394563">
+    <state width="1306" height="196" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933896787" />
+    <state width="1306" height="196" key="GridCell.Tab.0.left" timestamp="1611933896787">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="183" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933394563" />
-    <state width="1306" height="183" key="GridCell.Tab.0.right" timestamp="1611933394563">
+    <state width="1306" height="196" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933896787" />
+    <state width="1306" height="196" key="GridCell.Tab.0.right" timestamp="1611933896787">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="183" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933394563" />
+    <state width="1306" height="196" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933896787" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611933242401">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611933507605">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933242401" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611933507605" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611929466824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
