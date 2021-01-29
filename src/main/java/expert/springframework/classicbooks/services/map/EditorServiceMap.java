@@ -21,7 +21,7 @@ public class EditorServiceMap extends AbstractMapService<Editor, Long> implement
 
     @Override
     public Editor save(Editor object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
