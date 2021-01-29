@@ -1,6 +1,6 @@
 package expert.springframework.classicbooks.model;
 
-public class BookType {
+public class BookType extends BaseEntity {
 
     private String name;
 

@@ -2,7 +2,7 @@ package expert.springframework.classicbooks.model;
 
 import java.time.LocalDate;
 
-public class Book {
+public class Book extends BaseEntity {
 
     private BookType bookType;
     private Author author;

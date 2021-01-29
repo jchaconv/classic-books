@@ -19,12 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding POJOs. Closes #2.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/AuthorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/EditorService.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Implement interfaces for services">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -105,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611889759408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement interfaces for services">
+      <created>1611890867136</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611890867136</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,13 +130,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial project add." />
     <MESSAGE value="adding POJOs. Closes #2." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding POJOs. Closes #2." />
+    <MESSAGE value="Implement interfaces for services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement interfaces for services" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611889626479">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611891092353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611889626479" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891092353" />
     <state width="1306" height="63" key="GridCell.Tab.0.bottom" timestamp="1611864490269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -146,9 +154,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1306" height="63" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611864490269" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611889764883">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611890876813">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611889764883" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611890876813" />
   </component>
 </project>
