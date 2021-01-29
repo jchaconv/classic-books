@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Implement interfaces for services">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="Added BaseEntity class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/CrudService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/EditorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/EditorService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -131,9 +132,14 @@
     <MESSAGE value="Initial project add." />
     <MESSAGE value="adding POJOs. Closes #2." />
     <MESSAGE value="Implement interfaces for services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement interfaces for services" />
+    <MESSAGE value="Added BaseEntity class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BaseEntity class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1611891092353">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -154,9 +160,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1306" height="63" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611864490269" />
+    <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
     <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611890876813">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611890876813" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611929466824">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611929466824" />
   </component>
 </project>
