@@ -1,11 +1,11 @@
 package expert.springframework.classicbooks.services.map;
 
 import expert.springframework.classicbooks.model.Editor;
-import expert.springframework.classicbooks.services.CrudService;
+import expert.springframework.classicbooks.services.EditorService;
 
 import java.util.Set;
 
-public class EditorServiceMap extends AbstractMapService<Editor, Long> implements CrudService<Editor, Long> {
+public class EditorServiceMap extends AbstractMapService<Editor, Long> implements EditorService {
 
     @Override
     public Set<Editor> findAll() {

@@ -1,11 +1,16 @@
 package expert.springframework.classicbooks.services.map;
 
 import expert.springframework.classicbooks.model.Author;
-import expert.springframework.classicbooks.services.CrudService;
+import expert.springframework.classicbooks.services.AuthorService;
 
 import java.util.Set;
 
-public class AuthorServiceMap extends AbstractMapService<Author, Long> implements CrudService<Author, Long> {
+public class AuthorServiceMap extends AbstractMapService<Author, Long> implements AuthorService {
+
+    @Override
+    public Author findByLastName(String lastName) {
+        return null;
+    }
 
     @Override
     public Set<Author> findAll() {
