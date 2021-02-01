@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="fixed broken links">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="new image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612157411412</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="fixed broken links">
+      <created>1612198091024</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1612198091024</updated>
+    </task>
+    <task id="LOCAL-00028" summary="new image">
+      <created>1612198268535</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612198268535</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,7 +309,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implement interfaces for services" />
     <MESSAGE value="Added BaseEntity class" />
     <MESSAGE value="Refactor Services to a common Interface." />
     <MESSAGE value="Implement Map Based Services" />
@@ -321,7 +333,8 @@
     <MESSAGE value="added interfaces and implementations" />
     <MESSAGE value="adding editorials to editors" />
     <MESSAGE value="fixed broken links" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed broken links" />
+    <MESSAGE value="new image" />
+    <option name="LAST_COMMIT_MESSAGE" value="new image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -332,30 +345,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156464517" />
-    <state width="1323" height="160" key="GridCell.Tab.0.bottom" timestamp="1612156544581">
+    <state width="1279" height="160" key="GridCell.Tab.0.bottom" timestamp="1612198539194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
-    <state width="1323" height="160" key="GridCell.Tab.0.center" timestamp="1612156544581">
+    <state width="1279" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
+    <state width="1279" height="160" key="GridCell.Tab.0.center" timestamp="1612198539194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
-    <state width="1323" height="160" key="GridCell.Tab.0.left" timestamp="1612156544581">
+    <state width="1279" height="160" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
+    <state width="1279" height="160" key="GridCell.Tab.0.left" timestamp="1612198539194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
-    <state width="1323" height="160" key="GridCell.Tab.0.right" timestamp="1612156544581">
+    <state width="1279" height="160" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
+    <state width="1279" height="160" key="GridCell.Tab.0.right" timestamp="1612198539194">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
+    <state width="1279" height="160" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612157417248">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612198270179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612157417248" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198270179" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
