@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="updated Editor to use JPA">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added publication entity">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/BookTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/EditorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/EditorialRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/PublicationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Publication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +36,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -315,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612218443214</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added publication entity">
+      <created>1612218923308</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1612218923308</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,7 +342,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create index page and controller" />
     <MESSAGE value="adding editors page and controller" />
     <MESSAGE value="adding authors page and controller" />
     <MESSAGE value="adding bootstrap for data." />
@@ -356,7 +366,8 @@
     <MESSAGE value="updated base entity with jpa annotations" />
     <MESSAGE value="updated owner with JPA entity mappings" />
     <MESSAGE value="updated Editor to use JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Editor to use JPA" />
+    <MESSAGE value="added publication entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="added publication entity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -387,10 +398,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612218444796">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612218925223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612218444796" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612218925223" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
