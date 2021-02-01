@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added editor list">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="refactored map impl to abstract id generation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AbstractMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AbstractMapService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookServiceMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorServiceMap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611941910813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="refactored map impl to abstract id generation">
+      <created>1611961405971</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1611961405971</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +210,8 @@
     <MESSAGE value="adding spring config." />
     <MESSAGE value="added owner list and updated controller." />
     <MESSAGE value="added editor list" />
-    <option name="LAST_COMMIT_MESSAGE" value="added editor list" />
+    <MESSAGE value="refactored map impl to abstract id generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored map impl to abstract id generation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -219,30 +222,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941622577" />
-    <state width="1278" height="197" key="GridCell.Tab.0.bottom" timestamp="1611942852313">
+    <state width="1278" height="14" key="GridCell.Tab.0.bottom" timestamp="1611974744522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611942852313" />
-    <state width="1278" height="197" key="GridCell.Tab.0.center" timestamp="1611942852313">
+    <state width="1278" height="14" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611974744522" />
+    <state width="1278" height="14" key="GridCell.Tab.0.center" timestamp="1611974744522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611942852313" />
-    <state width="1278" height="197" key="GridCell.Tab.0.left" timestamp="1611942852312">
+    <state width="1278" height="14" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611974744522" />
+    <state width="1278" height="14" key="GridCell.Tab.0.left" timestamp="1611974744522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611942852312" />
-    <state width="1278" height="197" key="GridCell.Tab.0.right" timestamp="1611942852313">
+    <state width="1278" height="14" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611974744522" />
+    <state width="1278" height="14" key="GridCell.Tab.0.right" timestamp="1611974744522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1278" height="197" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611942852313" />
+    <state width="1278" height="14" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611974744522" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611941912869">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611961439639">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611941912869" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611961439639" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611938387724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
