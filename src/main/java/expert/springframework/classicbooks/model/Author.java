@@ -18,7 +18,7 @@ public class Author extends Person {
     private String telephone;
 
     //si borro el autor también se borra el libro
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "author")
     Set<Book> books = new HashSet<>();
 
     public String getAddress() {

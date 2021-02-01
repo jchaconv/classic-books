@@ -76,7 +76,7 @@ public class DataLoader implements CommandLineRunner {
         Book mariosBook = new Book();
         mariosBook.setBookType(savedNovelaBookType);
         mariosBook.setAuthor(author1);
-        mariosBook.setPublicationDate(LocalDate.now());
+        //mariosBook.setPublicationDate(LocalDate.now());
         mariosBook.setName("La ciudad y los perros");
         author1.getBooks().add(mariosBook);
 
@@ -93,7 +93,7 @@ public class DataLoader implements CommandLineRunner {
         Book cesarsBook = new Book();
         cesarsBook.setBookType(savedPoesiaBookType);
         cesarsBook.setAuthor(author2);
-        cesarsBook.setPublicationDate(LocalDate.now());
+        //cesarsBook.setPublicationDate(LocalDate.now());
         cesarsBook.setName("Los heraldos negros");
         author2.getBooks().add(cesarsBook);
 
