@@ -4,9 +4,18 @@ import java.time.LocalDate;
 
 public class Book extends BaseEntity {
 
+    private String name;
     private BookType bookType;
     private Author author;
     private LocalDate publicationDate;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public BookType getBookType() {
         return bookType;

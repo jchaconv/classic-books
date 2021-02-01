@@ -1,5 +1,6 @@
 package expert.springframework.classicbooks.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Author extends Person {
@@ -7,7 +8,7 @@ public class Author extends Person {
     private String address;
     private String city;
     private String telephone;
-    Set<Book> books;
+    Set<Book> books = new HashSet<>();
 
     public String getAddress() {
         return address;
