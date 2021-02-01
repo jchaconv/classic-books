@@ -1,11 +1,20 @@
 package expert.springframework.classicbooks.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "publications")
 public class Publication extends BaseEntity {
 
+    @Column(name = "date")
     private LocalDate date;
+
+    @Column(name = "description")
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "book_id")
     private Book book;
 
     public LocalDate getDate() {
