@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="refactored map impl to abstract id generation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding static resources">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/inputField.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/selectField.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -52,9 +53,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\templates" />
+      <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\static\resources" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="expert.springframework.classicbooks.model" />
     </key>
@@ -181,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611961405971</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding static resources">
+      <created>1612146701801</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612146701801</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +223,8 @@
     <MESSAGE value="added owner list and updated controller." />
     <MESSAGE value="added editor list" />
     <MESSAGE value="refactored map impl to abstract id generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored map impl to abstract id generation" />
+    <MESSAGE value="adding static resources" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding static resources" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -242,10 +255,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1611961439639">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612146703475">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611961439639" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612146703475" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611938387724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
