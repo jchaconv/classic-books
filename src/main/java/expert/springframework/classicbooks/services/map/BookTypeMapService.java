@@ -1,31 +1,31 @@
 package expert.springframework.classicbooks.services.map;
 
-import expert.springframework.classicbooks.model.Editor;
-import expert.springframework.classicbooks.services.EditorService;
+import expert.springframework.classicbooks.model.BookType;
+import expert.springframework.classicbooks.services.BookTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class EditorServiceMap extends AbstractMapService<Editor, Long> implements EditorService {
+public class BookTypeMapService extends AbstractMapService<BookType, Long> implements BookTypeService {
 
     @Override
-    public Set<Editor> findAll() {
+    public Set<BookType> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Editor findById(Long id) {
+    public BookType findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Editor save(Editor object) {
+    public BookType save(BookType object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Editor object) {
+    public void delete(BookType object) {
         super.delete(object);
     }
 

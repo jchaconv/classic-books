@@ -1,12 +1,10 @@
 package expert.springframework.classicbooks.bootstrap;
 
-import expert.springframework.classicbooks.model.Author;
-import expert.springframework.classicbooks.model.Book;
-import expert.springframework.classicbooks.model.BookType;
-import expert.springframework.classicbooks.model.Editor;
+import expert.springframework.classicbooks.model.*;
 import expert.springframework.classicbooks.services.AuthorService;
 import expert.springframework.classicbooks.services.BookTypeService;
 import expert.springframework.classicbooks.services.EditorService;
+import expert.springframework.classicbooks.services.EditorialService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -18,19 +16,30 @@ public class DataLoader implements CommandLineRunner {
     private final AuthorService authorService;
     private final EditorService editorService;
     private final BookTypeService bookTypeService;
+    private final EditorialService editorialService;
 
     //not need Autowired
 
 
-    public DataLoader(AuthorService authorService, EditorService editorService, BookTypeService bookTypeService) {
+    public DataLoader(AuthorService authorService, EditorService editorService, BookTypeService bookTypeService, EditorialService editorialService) {
         this.authorService = authorService;
         this.editorService = editorService;
         this.bookTypeService = bookTypeService;
+        this.editorialService = editorialService;
     }
 
     @Override
     public void run(String... args) throws Exception {
 
+        int count = bookTypeService.findAll().size();
+
+        if (count == 0) {
+            loadData();
+        }
+
+    }
+
+    private void loadData() {
         BookType novela = new BookType();
         novela.setName("Novela");
         BookType savedNovelaBookType = bookTypeService.save(novela);
@@ -42,6 +51,18 @@ public class DataLoader implements CommandLineRunner {
         BookType poesia = new BookType();
         novela.setName("Poesia");
         BookType savedPoesiaBookType = bookTypeService.save(poesia);
+
+        Editorial alfaguara = new Editorial();
+        alfaguara.setDescription("Alfaguara");
+        Editorial savedAlfaguara = editorialService.save(alfaguara);
+
+        Editorial atalanta = new Editorial();
+        atalanta.setDescription("Atalanta");
+        Editorial savedAtalanta = editorialService.save(atalanta);
+
+        Editorial galloNegro = new Editorial();
+        galloNegro.setDescription("Gallo Negro");
+        Editorial savedGalloNegro = editorialService.save(galloNegro);
 
 
         Author author1 = new Author();
@@ -84,6 +105,7 @@ public class DataLoader implements CommandLineRunner {
 //        editor1.setId(1L);
         editor1.setFirstName("André");
         editor1.setLastName("Coyné");
+        editor1.getEditorials().add(savedAlfaguara);
 
         editorService.save(editor1);
 
@@ -91,10 +113,10 @@ public class DataLoader implements CommandLineRunner {
 //        editor2.setId(2L);
         editor2.setFirstName("Juan");
         editor2.setLastName("Espejo");
+        editor1.getEditorials().add(savedAtalanta);
 
         editorService.save(editor2);
 
         System.out.println("Cargando editores ... ");
-
     }
 }

@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class AuthorServiceMap extends AbstractMapService<Author, Long> implements AuthorService {
+public class AuthorMapService extends AbstractMapService<Author, Long> implements AuthorService {
 
     private final BookTypeService bookTypeService;
     private final BookService bookService;
 
-    public AuthorServiceMap(BookTypeService bookTypeService, BookService bookService) {
+    public AuthorMapService(BookTypeService bookTypeService, BookService bookService) {
         this.bookTypeService = bookTypeService;
         this.bookService = bookService;
     }

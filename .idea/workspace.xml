@@ -19,17 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added BookTypes in DataLoader">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/EditorialService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookMapService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorialServiceMap.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added interfaces and implementations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookServiceMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookTypeServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/BookTypeMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorialServiceMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/EditorialMapService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
   <component name="RecentsManager">
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612150352167</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added interfaces and implementations">
+      <created>1612155775907</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612155775907</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,41 +310,46 @@
     <MESSAGE value="added editorial entity and associated with editor" />
     <MESSAGE value="added contact properties to author" />
     <MESSAGE value="added BookTypeService" />
-    <option name="LAST_COMMIT_MESSAGE" value="added BookTypeService" />
+    <MESSAGE value="added interfaces and implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added interfaces and implementations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612155635507">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612156464517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155635507" />
-    <state width="1323" height="160" key="GridCell.Tab.0.bottom" timestamp="1612155477597">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156464517" />
+    <state width="1323" height="160" key="GridCell.Tab.0.bottom" timestamp="1612156544581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155477597" />
-    <state width="1323" height="160" key="GridCell.Tab.0.center" timestamp="1612155477596">
+    <state width="1323" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
+    <state width="1323" height="160" key="GridCell.Tab.0.center" timestamp="1612156544581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155477596" />
-    <state width="1323" height="160" key="GridCell.Tab.0.left" timestamp="1612155477596">
+    <state width="1323" height="160" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
+    <state width="1323" height="160" key="GridCell.Tab.0.left" timestamp="1612156544581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155477596" />
-    <state width="1323" height="160" key="GridCell.Tab.0.right" timestamp="1612155477596">
+    <state width="1323" height="160" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
+    <state width="1323" height="160" key="GridCell.Tab.0.right" timestamp="1612156544581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="160" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155477596" />
+    <state width="1323" height="160" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156544581" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612150353835">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612155777750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612150353835" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612155777750" />
+    <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="114" key="extract.method.dialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156225412" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611938387724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

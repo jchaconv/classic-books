@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class EditorialServiceMap extends AbstractMapService<Editorial, Long> implements EditorialService {
+public class EditorialMapService extends AbstractMapService<Editorial, Long> implements EditorialService {
 
     @Override
     public Set<Editorial> findAll() {
