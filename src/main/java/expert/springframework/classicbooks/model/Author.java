@@ -1,13 +1,24 @@
 package expert.springframework.classicbooks.model;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name = "authors")
 public class Author extends Person {
 
+    @Column(name = "address")
     private String address;
+
+    @Column(name = "city")
     private String city;
+
+    @Column(name = "telephone")
     private String telephone;
+
+    //si borro el autor también se borra el libro
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     Set<Book> books = new HashSet<>();
 
     public String getAddress() {
