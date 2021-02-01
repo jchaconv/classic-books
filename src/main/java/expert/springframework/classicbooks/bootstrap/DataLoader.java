@@ -1,8 +1,10 @@
 package expert.springframework.classicbooks.bootstrap;
 
 import expert.springframework.classicbooks.model.Author;
+import expert.springframework.classicbooks.model.BookType;
 import expert.springframework.classicbooks.model.Editor;
 import expert.springframework.classicbooks.services.AuthorService;
+import expert.springframework.classicbooks.services.BookTypeService;
 import expert.springframework.classicbooks.services.EditorService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,15 +14,32 @@ public class DataLoader implements CommandLineRunner {
 
     private final AuthorService authorService;
     private final EditorService editorService;
+    private final BookTypeService bookTypeService;
 
     //not need Autowired
-    public DataLoader(AuthorService authorService, EditorService editorService) {
+
+
+    public DataLoader(AuthorService authorService, EditorService editorService, BookTypeService bookTypeService) {
         this.authorService = authorService;
         this.editorService = editorService;
+        this.bookTypeService = bookTypeService;
     }
 
     @Override
     public void run(String... args) throws Exception {
+
+        BookType novela = new BookType();
+        novela.setName("Novela");
+        BookType savedNovelaBookType = bookTypeService.save(novela);
+
+        BookType romance = new BookType();
+        novela.setName("Romance");
+        BookType savedRomanceBookType = bookTypeService.save(romance);
+
+        BookType poesia = new BookType();
+        novela.setName("Poesia");
+        BookType savedPoesiaBookType = bookTypeService.save(poesia);
+
 
         Author author1 = new Author();
 //        author1.setId(1L);
