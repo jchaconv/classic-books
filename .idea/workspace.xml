@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="updated base entity with jpa annotations">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="updated owner with JPA entity mappings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editorial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612214994975</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="updated owner with JPA entity mappings">
+      <created>1612215885298</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1612215885298</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,7 +324,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactor Services to a common Interface." />
     <MESSAGE value="Implement Map Based Services" />
     <MESSAGE value="Create index page and controller" />
     <MESSAGE value="adding editors page and controller" />
@@ -344,7 +348,8 @@
     <MESSAGE value="fixed broken links" />
     <MESSAGE value="new image" />
     <MESSAGE value="updated base entity with jpa annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated base entity with jpa annotations" />
+    <MESSAGE value="updated owner with JPA entity mappings" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated owner with JPA entity mappings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -355,30 +360,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612156464517" />
-    <state width="1279" height="160" key="GridCell.Tab.0.bottom" timestamp="1612198539194">
+    <state width="1279" height="129" key="GridCell.Tab.0.bottom" timestamp="1612215813745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="160" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
-    <state width="1279" height="160" key="GridCell.Tab.0.center" timestamp="1612198539194">
+    <state width="1279" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612215813745" />
+    <state width="1279" height="129" key="GridCell.Tab.0.center" timestamp="1612215813745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="160" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
-    <state width="1279" height="160" key="GridCell.Tab.0.left" timestamp="1612198539194">
+    <state width="1279" height="129" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612215813745" />
+    <state width="1279" height="129" key="GridCell.Tab.0.left" timestamp="1612215813745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="160" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
-    <state width="1279" height="160" key="GridCell.Tab.0.right" timestamp="1612198539194">
+    <state width="1279" height="129" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612215813745" />
+    <state width="1279" height="129" key="GridCell.Tab.0.right" timestamp="1612215813745">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="160" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612198539194" />
+    <state width="1279" height="129" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612215813745" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612214997667">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612215887603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612214997667" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612215887603" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
