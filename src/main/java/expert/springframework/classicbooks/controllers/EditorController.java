@@ -14,7 +14,7 @@ public class EditorController {
         this.editorService = editorService;
     }
 
-    @RequestMapping({"/editors", "/editors/index", "/editors/index.html"})
+    @RequestMapping({"/editors", "/editors/index", "/editors.html", "/editors/index.html"})
     public String listEditors(Model model) {
         model.addAttribute("editors", editorService.findAll());
         return "editors/index";

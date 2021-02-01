@@ -24,4 +24,10 @@ public class AuthorController {
         return "authors/index";
     }
 
+    @RequestMapping({"/find"})
+    public String findAuthors() {
+        return "notimplemented";
+    }
+
+
 }
