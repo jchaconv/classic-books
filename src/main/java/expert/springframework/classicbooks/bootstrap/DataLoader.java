@@ -1,10 +1,7 @@
 package expert.springframework.classicbooks.bootstrap;
 
 import expert.springframework.classicbooks.model.*;
-import expert.springframework.classicbooks.services.AuthorService;
-import expert.springframework.classicbooks.services.BookTypeService;
-import expert.springframework.classicbooks.services.EditorService;
-import expert.springframework.classicbooks.services.EditorialService;
+import expert.springframework.classicbooks.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,15 +14,17 @@ public class DataLoader implements CommandLineRunner {
     private final EditorService editorService;
     private final BookTypeService bookTypeService;
     private final EditorialService editorialService;
+    private final PublicationService publicationService;
 
     //not need Autowired
 
 
-    public DataLoader(AuthorService authorService, EditorService editorService, BookTypeService bookTypeService, EditorialService editorialService) {
+    public DataLoader(AuthorService authorService, EditorService editorService, BookTypeService bookTypeService, EditorialService editorialService, PublicationService publicationService) {
         this.authorService = authorService;
         this.editorService = editorService;
         this.bookTypeService = bookTypeService;
         this.editorialService = editorialService;
+        this.publicationService = publicationService;
     }
 
     @Override
@@ -98,6 +97,12 @@ public class DataLoader implements CommandLineRunner {
         author2.getBooks().add(cesarsBook);
 
         authorService.save(author2);
+
+        Publication cesarsBookPublication = new Publication();
+        cesarsBookPublication.setBook(cesarsBook);
+        cesarsBookPublication.setDate(LocalDate.now());
+        cesarsBookPublication.setDescription("Publicación de Los Heraldos Negros");
+
 
         System.out.println("Cargando autores ... ");
 
