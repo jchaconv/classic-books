@@ -112,6 +112,9 @@ public class DataLoader implements CommandLineRunner {
         editor1.setLastName("Coyné");
         editor1.getEditorials().add(savedAlfaguara);
 
+
+
+
         editorService.save(editor1);
 
         Editor editor2 = new Editor();
