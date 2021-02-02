@@ -2,11 +2,13 @@ package expert.springframework.classicbooks.services.map;
 
 import expert.springframework.classicbooks.model.Editorial;
 import expert.springframework.classicbooks.services.EditorialService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class EditorialMapService extends AbstractMapService<Editorial, Long> implements EditorialService {
 
     @Override

@@ -36,7 +36,6 @@ public class AuthorServiceImpl implements AuthorService {
     public Set<Author> findAll() {
 
         Set<Author> authors = new HashSet<>();
-
         authorRepository.findAll().forEach(authors::add);
 
         return authors;
@@ -54,17 +53,17 @@ public class AuthorServiceImpl implements AuthorService {
     }
 
     @Override
-    public Author save(Author object) {
-        return null;
+    public Author save(Author author) {
+        return authorRepository.save(author);
     }
 
     @Override
-    public void delete(Author object) {
-
+    public void delete(Author author) {
+        authorRepository.delete(author);
     }
 
     @Override
-    public void deleteById(Long aLong) {
-
+    public void deleteById(Long id) {
+        authorRepository.deleteById(id);
     }
 }

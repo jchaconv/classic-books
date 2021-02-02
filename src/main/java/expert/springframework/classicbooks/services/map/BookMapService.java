@@ -2,11 +2,13 @@ package expert.springframework.classicbooks.services.map;
 
 import expert.springframework.classicbooks.model.Book;
 import expert.springframework.classicbooks.services.BookService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class BookMapService extends AbstractMapService<Book, Long> implements BookService {
 
     @Override

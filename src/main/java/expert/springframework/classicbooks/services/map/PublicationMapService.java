@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-//@Profile({"default", "map"})
+@Profile({"default", "map"})
 public class PublicationMapService extends AbstractMapService<Publication, Long> implements PublicationService {
 
     @Override

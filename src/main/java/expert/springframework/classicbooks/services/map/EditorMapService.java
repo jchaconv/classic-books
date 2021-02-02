@@ -4,11 +4,13 @@ import expert.springframework.classicbooks.model.Editor;
 import expert.springframework.classicbooks.model.Editorial;
 import expert.springframework.classicbooks.services.EditorService;
 import expert.springframework.classicbooks.services.EditorialService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class EditorMapService extends AbstractMapService<Editor, Long> implements EditorService {
 
     private final EditorialService editorialService;
