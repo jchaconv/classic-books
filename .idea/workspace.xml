@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="updated profiles for jpa services, tested active profiles">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added project lombok to project.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/services/map/AuthorMapServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Editorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Publication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Publication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/ClassicBooksApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/ClassicBooksApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +36,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -61,15 +56,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
-      <recent name="expert.springframework.classicbooks.services" />
-      <recent name="expert.springframework.classicbooks.model" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="expert.springframework.classicbooks.services.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources" />
@@ -77,8 +72,16 @@
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\templates" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\static\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
+      <recent name="expert.springframework.classicbooks.services" />
+      <recent name="expert.springframework.classicbooks.model" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AuthorMapServiceTest.findByLastName">
     <configuration name="ClassicBooksApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.ClassicBooksApplication" />
       <module name="classic-books" />
@@ -92,8 +95,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AuthorMapServiceTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.services.map" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.services.map.AuthorMapServiceTest" />
+      <option name="METHOD_NAME" value="findByLastName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorMapServiceTest.saveNoId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.services.map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.services.map" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.services.map.AuthorMapServiceTest" />
+      <option name="METHOD_NAME" value="saveNoId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassicBooksApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.ClassicBooksApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthorMapServiceTest.findByLastName" />
+        <item itemvalue="JUnit.AuthorMapServiceTest.saveNoId" />
+        <item itemvalue="JUnit.ClassicBooksApplicationTests" />
         <item itemvalue="Application.ClassicBooksApplication" />
       </list>
     </recent_temporary>
@@ -382,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612230868219</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added project lombok to project.">
+      <created>1612281805532</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612281805532</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,7 +458,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding static resources" />
     <MESSAGE value="copied templates from spring pet clinic resources" />
     <MESSAGE value="added wro4j plugin and config from spring pet clinic." />
     <MESSAGE value="added layout to index page" />
@@ -423,7 +482,8 @@
     <MESSAGE value="implemented map impl for visit service" />
     <MESSAGE value="implemented jpa publication service impl, added loader data." />
     <MESSAGE value="updated profiles for jpa services, tested active profiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated profiles for jpa services, tested active profiles" />
+    <MESSAGE value="added project lombok to project." />
+    <option name="LAST_COMMIT_MESSAGE" value="added project lombok to project." />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -443,22 +503,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1323" height="120" key="GridCell.Tab.0.bottom" timestamp="1612281778024">
+    <state width="1323" height="184" key="GridCell.Tab.0.bottom" timestamp="1612321848447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="120" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281778024" />
-    <state width="1323" height="120" key="GridCell.Tab.0.center" timestamp="1612281778024">
+    <state width="1323" height="184" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612321848447" />
+    <state width="1323" height="184" key="GridCell.Tab.0.center" timestamp="1612321848447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="120" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281778024" />
-    <state width="1323" height="120" key="GridCell.Tab.0.left" timestamp="1612281778024">
+    <state width="1323" height="184" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612321848447" />
+    <state width="1323" height="184" key="GridCell.Tab.0.left" timestamp="1612321848447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="120" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281778024" />
-    <state width="1323" height="120" key="GridCell.Tab.0.right" timestamp="1612281778024">
+    <state width="1323" height="184" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612321848447" />
+    <state width="1323" height="184" key="GridCell.Tab.0.right" timestamp="1612321848447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="120" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281778024" />
+    <state width="1323" height="184" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612321848447" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -467,10 +527,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612230869546">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612281809223">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612230869546" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281809223" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612321128472">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612321128472" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

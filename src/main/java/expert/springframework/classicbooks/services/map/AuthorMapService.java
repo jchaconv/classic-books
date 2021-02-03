@@ -24,7 +24,11 @@ public class AuthorMapService extends AbstractMapService<Author, Long> implement
 
     @Override
     public Author findByLastName(String lastName) {
-        return null;
+        return this.findAll()
+                .stream()
+                .filter(author -> author.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
     }
 
     @Override
