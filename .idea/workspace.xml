@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/services/springdatajpa/AuthorServiceImplTest.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added jpa tests for author service.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/controllers/AuthorControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +62,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="expert.springframework.classicbooks.controllers" />
       <recent name="expert.springframework.classicbooks.services.springdatajpa" />
       <recent name="expert.springframework.classicbooks.services.map" />
     </key>
@@ -80,7 +81,54 @@
       <recent name="expert.springframework.classicbooks.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AuthorServiceImplTest">
+  <component name="RunManager" selected="JUnit.AuthorControllerTest">
+    <configuration name="AuthorControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorControllerTest.findAuthors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
+      <option name="METHOD_NAME" value="findAuthors" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthorControllerTest.listAuthors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
+      <option name="METHOD_NAME" value="listAuthors" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthorServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classic-books" />
       <extension name="coverage">
@@ -112,61 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorServiceImplTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classic-books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.services.springdatajpa.AuthorServiceImplTest" />
-      <option name="METHOD_NAME" value="findById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthorServiceImplTest.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classic-books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.services.springdatajpa.AuthorServiceImplTest" />
-      <option name="METHOD_NAME" value="findByLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthorServiceImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classic-books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.services.springdatajpa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.services.springdatajpa" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.services.springdatajpa.AuthorServiceImplTest" />
-      <option name="METHOD_NAME" value="save" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthorControllerTest" />
+        <item itemvalue="JUnit.AuthorControllerTest.findAuthors" />
+        <item itemvalue="JUnit.AuthorControllerTest.listAuthors" />
         <item itemvalue="JUnit.AuthorServiceImplTest" />
         <item itemvalue="JUnit.AuthorServiceImplTest.deleteById" />
-        <item itemvalue="JUnit.AuthorServiceImplTest.save" />
-        <item itemvalue="JUnit.AuthorServiceImplTest.findById" />
-        <item itemvalue="JUnit.AuthorServiceImplTest.findByLastName" />
       </list>
     </recent_temporary>
   </component>
@@ -468,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612322112056</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="added jpa tests for author service.">
+      <created>1612323375546</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323375546</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +491,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added wro4j plugin and config from spring pet clinic." />
     <MESSAGE value="added layout to index page" />
     <MESSAGE value="added layout" />
     <MESSAGE value="added layout to editors page" />
@@ -509,7 +515,8 @@
     <MESSAGE value="updated profiles for jpa services, tested active profiles" />
     <MESSAGE value="added project lombok to project." />
     <MESSAGE value="added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
+    <MESSAGE value="added jpa tests for author service." />
+    <option name="LAST_COMMIT_MESSAGE" value="added jpa tests for author service." />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -529,22 +536,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1323" height="119" key="GridCell.Tab.0.bottom" timestamp="1612323314825">
+    <state width="1323" height="197" key="GridCell.Tab.0.bottom" timestamp="1612324636915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="119" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323314825" />
-    <state width="1323" height="119" key="GridCell.Tab.0.center" timestamp="1612323314825">
+    <state width="1323" height="197" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612324636915" />
+    <state width="1323" height="197" key="GridCell.Tab.0.center" timestamp="1612324636915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="119" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323314825" />
-    <state width="1323" height="119" key="GridCell.Tab.0.left" timestamp="1612323314825">
+    <state width="1323" height="197" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612324636915" />
+    <state width="1323" height="197" key="GridCell.Tab.0.left" timestamp="1612324636915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="119" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323314825" />
-    <state width="1323" height="119" key="GridCell.Tab.0.right" timestamp="1612323314825">
+    <state width="1323" height="197" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612324636915" />
+    <state width="1323" height="197" key="GridCell.Tab.0.right" timestamp="1612324636915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="119" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323314825" />
+    <state width="1323" height="197" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612324636915" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -553,14 +560,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612322113799">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612323379748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612322113799" />
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612322178933">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323379748" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612323438269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612322178933" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323438269" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
