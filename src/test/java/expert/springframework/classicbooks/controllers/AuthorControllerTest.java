@@ -5,6 +5,7 @@ import expert.springframework.classicbooks.services.AuthorService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -114,4 +115,61 @@ class AuthorControllerTest {
                 .andExpect(view().name("authors/authorDetails"))
                 .andExpect(model().attribute("author", hasProperty("id", is(1L))));
     }
+
+
+    @Test
+    void initCreationForm() throws Exception {
+
+        mockMvc.perform(get("/authors/new"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("authors/createOrUpdateAuthorForm"))
+                .andExpect(model().attributeExists("author"));
+
+        verifyNoInteractions(service);
+
+    }
+
+    @Test
+    void processCreationForm() throws Exception {
+
+        when(service.save(ArgumentMatchers.any())).thenReturn(Author.builder().id(1L).build());
+
+        mockMvc.perform(post("/authors/new"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(view().name("redirect:/authors/1"))
+                .andExpect(model().attributeExists("author"));
+
+        verify(service).save(ArgumentMatchers.any());
+
+    }
+
+    @Test
+    void initUpdateAuthorForm() throws Exception {
+
+        when(service.findById(anyLong())).thenReturn(Author.builder().id(1L).build());
+
+        mockMvc.perform(get("/authors/1/edit"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("authors/createOrUpdateAuthorForm"))
+                .andExpect(model().attributeExists("author"));
+
+        verifyZeroInteractions(service);
+
+    }
+
+    @Test
+    void processUpdateAuthorForm() throws Exception {
+
+        when(service.save(ArgumentMatchers.any())).thenReturn(Author.builder().id(1L).build());
+
+        mockMvc.perform(post("/authors/1/edit"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(view().name("redirect:/authors/1"))
+                .andExpect(model().attributeExists("author"));
+
+        verify(service).save(ArgumentMatchers.any());
+
+    }
+
+
 }

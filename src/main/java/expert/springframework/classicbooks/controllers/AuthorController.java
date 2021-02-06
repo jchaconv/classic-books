@@ -5,11 +5,9 @@ import expert.springframework.classicbooks.services.AuthorService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -17,6 +15,8 @@ import java.util.List;
 @RequestMapping("/authors")
 @Controller
 public class AuthorController {
+
+    private static final String VIEWS_AUTHOR_CREATE_OR_UPDATE_FORM = "authors/createOrUpdateAuthorForm";
 
     private final AuthorService authorService;
 
@@ -77,6 +77,39 @@ public class AuthorController {
         mav.addObject(authorService.findById(authorId));
         return mav;
 
+    }
+
+    @GetMapping("/new")
+    public String initCreationForm(Model model) {
+        model.addAttribute("author", Author.builder().build());
+        return VIEWS_AUTHOR_CREATE_OR_UPDATE_FORM;
+    }
+
+    @PostMapping("/new")
+    public String processCreationForm(@Validated Author author, BindingResult result) {
+        if (result.hasErrors()) {
+            return VIEWS_AUTHOR_CREATE_OR_UPDATE_FORM;
+        } else {
+            Author savedAuthor = authorService.save(author);
+            return "redirect:/authors/" + savedAuthor.getId();
+        }
+    }
+
+    @GetMapping("/{authorId}/edit")
+    public String initUpdateOwnerForm(@PathVariable Long authorId, Model model) {
+        model.addAttribute(authorService.findById(authorId));
+        return VIEWS_AUTHOR_CREATE_OR_UPDATE_FORM;
+    }
+
+    @PostMapping("/{authorId}/edit")
+    public String processUpdateOwnerForm(@Validated Author author, BindingResult result, @PathVariable Long authorId) {
+        if (result.hasErrors()) {
+            return VIEWS_AUTHOR_CREATE_OR_UPDATE_FORM;
+        } else {
+            author.setId(authorId);
+            Author savedAuthor = authorService.save(author);
+            return "redirect:/authors/" + savedAuthor.getId();
+        }
     }
 
 
