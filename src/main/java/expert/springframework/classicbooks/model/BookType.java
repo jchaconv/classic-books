@@ -10,10 +10,15 @@ import javax.persistence.Table;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(name = "types")
 public class BookType extends BaseEntity {
+
+    @Builder
+    public BookType(Long id, String name) {
+        super(id);
+        this.name = name;
+    }
 
     @Column(name = "name")
     private String name;
