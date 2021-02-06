@@ -8,6 +8,7 @@ import expert.springframework.classicbooks.services.BookTypeService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -77,5 +78,11 @@ public class AuthorMapService extends AbstractMapService<Author, Long> implement
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public List<Author> findAllByLastNameLike(String lastName) {
+        //todo impl
+        return null;
     }
 }

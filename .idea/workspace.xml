@@ -19,11 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added MockMvc tests for AuthorController.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/authorDetails.html" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added author details">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/authorsList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/createOrUpdateAuthorForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/findAuthors.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/repositories/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/AuthorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorMapService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/map/AuthorMapService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/springdatajpa/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/services/springdatajpa/AuthorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/controllers/AuthorControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/controllers/AuthorControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorControllerTest.displayAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthorControllerTest.processFindFormReturnMany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classic-books" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +128,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
       <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
-      <option name="METHOD_NAME" value="displayAuthor" />
+      <option name="METHOD_NAME" value="processFindFormReturnMany" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorControllerTest.findAuthors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthorControllerTest.processFindFormReturnOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classic-books" />
       <extension name="coverage">
         <pattern>
@@ -139,24 +144,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
       <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
-      <option name="METHOD_NAME" value="findAuthors" />
+      <option name="METHOD_NAME" value="processFindFormReturnOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorControllerTest.listAuthors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClassicBooksApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classic-books" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
+          <option name="PATTERN" value="expert.springframework.classicbooks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
-      <option name="METHOD_NAME" value="listAuthors" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.ClassicBooksApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClassicBooksApplication" />
-        <item itemvalue="JUnit.AuthorControllerTest.displayAuthor" />
+        <item itemvalue="JUnit.ClassicBooksApplicationTests" />
         <item itemvalue="JUnit.AuthorControllerTest" />
-        <item itemvalue="JUnit.AuthorControllerTest.findAuthors" />
-        <item itemvalue="JUnit.AuthorControllerTest.listAuthors" />
+        <item itemvalue="JUnit.AuthorControllerTest.processFindFormReturnMany" />
+        <item itemvalue="JUnit.AuthorControllerTest.processFindFormReturnOne" />
       </list>
     </recent_temporary>
   </component>
@@ -483,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612324795399</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="added author details">
+      <created>1612583446087</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612583446087</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +510,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added layout" />
     <MESSAGE value="added layout to editors page" />
     <MESSAGE value="added publication, updated author with book relationship." />
     <MESSAGE value="added editorial entity and associated with editor" />
@@ -524,17 +534,18 @@
     <MESSAGE value="added tests" />
     <MESSAGE value="added jpa tests for author service." />
     <MESSAGE value="added MockMvc tests for AuthorController." />
-    <option name="LAST_COMMIT_MESSAGE" value="added MockMvc tests for AuthorController." />
+    <MESSAGE value="added author details" />
+    <option name="LAST_COMMIT_MESSAGE" value="added author details" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612281022226">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612585184008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612281022226" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612585184008" />
     <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612228535525" />
     <state x="391" y="174" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612219504836">
       <screen x="0" y="0" width="1366" height="728" />
@@ -544,38 +555,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1279" height="104" key="GridCell.Tab.0.bottom" timestamp="1612563515988">
+    <state width="1323" height="207" key="GridCell.Tab.0.bottom" timestamp="1612587067114">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="104" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612563515988" />
-    <state width="1279" height="104" key="GridCell.Tab.0.center" timestamp="1612563515988">
+    <state width="1323" height="207" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612587067114" />
+    <state width="1323" height="207" key="GridCell.Tab.0.center" timestamp="1612587067114">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="104" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612563515988" />
-    <state width="1279" height="104" key="GridCell.Tab.0.left" timestamp="1612563515987">
+    <state width="1323" height="207" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612587067114" />
+    <state width="1323" height="207" key="GridCell.Tab.0.left" timestamp="1612587067113">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="104" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612563515987" />
-    <state width="1279" height="104" key="GridCell.Tab.0.right" timestamp="1612563515988">
+    <state width="1323" height="207" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612587067113" />
+    <state width="1323" height="207" key="GridCell.Tab.0.right" timestamp="1612587067114">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="104" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612563515988" />
-    <state width="1279" height="90" key="GridCell.Tab.1.bottom" timestamp="1612537672392">
+    <state width="1323" height="207" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612587067114" />
+    <state width="1323" height="268" key="GridCell.Tab.1.bottom" timestamp="1612586728458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="90" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612537672392" />
-    <state width="1279" height="90" key="GridCell.Tab.1.center" timestamp="1612537672392">
+    <state width="1323" height="268" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728458" />
+    <state width="1323" height="268" key="GridCell.Tab.1.center" timestamp="1612586728457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="90" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612537672392" />
-    <state width="1279" height="90" key="GridCell.Tab.1.left" timestamp="1612537672392">
+    <state width="1323" height="268" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1323" height="268" key="GridCell.Tab.1.left" timestamp="1612586728457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="90" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612537672392" />
-    <state width="1279" height="90" key="GridCell.Tab.1.right" timestamp="1612537672392">
+    <state width="1323" height="268" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1323" height="268" key="GridCell.Tab.1.right" timestamp="1612586728457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1279" height="90" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612537672392" />
+    <state width="1323" height="268" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -584,10 +595,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612324799342">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612583454169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612324799342" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612583454169" />
     <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612323438269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

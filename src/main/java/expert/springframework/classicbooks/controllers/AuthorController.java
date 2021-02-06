@@ -1,12 +1,18 @@
 package expert.springframework.classicbooks.controllers;
 
+import expert.springframework.classicbooks.model.Author;
 import expert.springframework.classicbooks.services.AuthorService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @RequestMapping("/authors")
 @Controller
@@ -18,18 +24,50 @@ public class AuthorController {
         this.authorService = authorService;
     }
 
-    @RequestMapping({"", "/", "/index", "/index.html"})
+    //spring 1.2
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+
+    /*@RequestMapping({"", "/", "/index", "/index.html"})
     public String listAuthors(Model model) {
-        /*El string "authors" es el campo que el model buscará
-        en el template. Es la lista que recorrerá. Debe agregarse.*/
+        *//*El string "authors" es el campo que el model buscará
+        en el template. Es la lista que recorrerá. Debe agregarse.*//*
         model.addAttribute("authors", authorService.findAll());
 
         return "authors/index";
-    }
+    }*/
 
     @RequestMapping({"/find"})
-    public String findAuthors() {
-        return "notimplemented";
+    public String findAuthors(Model model) {
+        model.addAttribute("author", Author.builder().build());
+        return "authors/findAuthors";
+    }
+
+    @GetMapping
+    public String processFindForm(Author author, BindingResult result, Model model) {
+
+        if (author.getLastName() == null) {
+            author.setLastName("");
+        }
+
+        //find authors by lastName
+        List<Author> authorList = authorService.findAllByLastNameLike(author.getLastName());
+
+        if (authorList.isEmpty()) {
+            result.rejectValue("lastName", "notFound", "not found");
+            return "authors/findAuthors";
+        } else if (authorList.size() == 1) {
+            author = authorList.iterator().next();
+            return "redirect:/authors/" + author.getId();
+        } else {
+            //selections -> lista recorrida en el template
+            model.addAttribute("selections", authorList);
+            return "authors/authorsList";
+        }
+
+
     }
 
     @GetMapping("/{authorId}")

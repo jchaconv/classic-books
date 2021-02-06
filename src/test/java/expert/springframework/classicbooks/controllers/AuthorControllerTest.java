@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -47,7 +48,7 @@ class AuthorControllerTest {
 
     }
 
-    @Test
+    /*@Test
     void listAuthors() throws Exception {
 
         when(service.findAll()).thenReturn(authors);
@@ -57,18 +58,51 @@ class AuthorControllerTest {
                 .andExpect(view().name("authors/index"))
                 .andExpect(model().attribute("authors", hasSize(2)));
 
-    }
+    }*/
 
     @Test
     void findAuthors() throws Exception {
 
-        mockMvc.perform(get("/authors/find"))
+        //Si invoco a "/authors/find" debe retornar la vista "notimplemented"
+        /*mockMvc.perform(get("/authors/find"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("notimplemented"));
+
+        verifyNoInteractions(service);*/
+
+        //falta implementar
+        mockMvc.perform(get("/authors/find"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("authors/findAuthors"))
+                .andExpect(model().attributeExists("author"));
 
         verifyNoInteractions(service);
 
     }
+
+    @Test
+    void processFindFormReturnMany() throws Exception {
+
+        when(service.findAllByLastNameLike(anyString())).thenReturn(Arrays.asList(Author.builder().id(1L).build(),
+                Author.builder().id(2L).build()));
+
+        mockMvc.perform(get("/authors"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("authors/authorsList"))
+                .andExpect(model().attribute("selections", hasSize(2)));
+    }
+
+    @Test
+    void processFindFormReturnOne() throws Exception {
+
+        when(service.findAllByLastNameLike(anyString())).thenReturn(Arrays.asList(Author.builder().id(1L).build()));
+
+        mockMvc.perform(get("/authors"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(view().name("redirect:/authors/1"));
+        //.andExpect(model().attribute("authors", hasSize(2)));
+    }
+
 
     @Test
     void displayAuthor() throws Exception {
