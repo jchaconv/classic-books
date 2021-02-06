@@ -3,7 +3,10 @@ package expert.springframework.classicbooks.controllers;
 import expert.springframework.classicbooks.services.AuthorService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @RequestMapping("/authors")
 @Controller
@@ -27,6 +30,15 @@ public class AuthorController {
     @RequestMapping({"/find"})
     public String findAuthors() {
         return "notimplemented";
+    }
+
+    @GetMapping("/{authorId}")
+    public ModelAndView showAuthor(@PathVariable("authorId") Long authorId) {
+
+        ModelAndView mav = new ModelAndView("authors/authorDetails");
+        mav.addObject(authorService.findById(authorId));
+        return mav;
+
     }
 
 

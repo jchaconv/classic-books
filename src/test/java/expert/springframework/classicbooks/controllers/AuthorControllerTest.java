@@ -69,4 +69,15 @@ class AuthorControllerTest {
         verifyNoInteractions(service);
 
     }
+
+    @Test
+    void displayAuthor() throws Exception {
+
+        when(service.findById(anyLong())).thenReturn(Author.builder().id(1L).build());
+
+        mockMvc.perform(get("/authors/1"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("authors/authorDetails"))
+                .andExpect(model().attribute("author", hasProperty("id", is(1L))));
+    }
 }

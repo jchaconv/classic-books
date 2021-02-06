@@ -40,7 +40,7 @@ public class DataLoader implements CommandLineRunner {
 
     private void loadData() {
         BookType novela = new BookType();
-        novela.setName("Novela");
+        novela.setName("Novel");
         BookType savedNovelaBookType = bookTypeService.save(novela);
 
         BookType romance = new BookType();
@@ -48,7 +48,7 @@ public class DataLoader implements CommandLineRunner {
         BookType savedRomanceBookType = bookTypeService.save(romance);
 
         BookType poesia = new BookType();
-        novela.setName("Poesia");
+        novela.setName("Poetry");
         BookType savedPoesiaBookType = bookTypeService.save(poesia);
 
         Editorial alfaguara = new Editorial();
@@ -68,9 +68,9 @@ public class DataLoader implements CommandLineRunner {
 //        author1.setId(1L);
         author1.setFirstName("Mario");
         author1.setLastName("Vargas Llosa");
-        author1.setAddress("En España");
+        author1.setAddress("Resides in Spain");
         author1.setCity("Madrid");
-        author1.setTelephone("5555996321");
+        author1.setTelephone("55559-9632-1");
 
         Book mariosBook = new Book();
         mariosBook.setBookType(savedNovelaBookType);
@@ -101,18 +101,16 @@ public class DataLoader implements CommandLineRunner {
         Publication cesarsBookPublication = new Publication();
         cesarsBookPublication.setBook(cesarsBook);
         cesarsBookPublication.setDate(LocalDate.now());
-        cesarsBookPublication.setDescription("Publicación de Los Heraldos Negros");
+        cesarsBookPublication.setDescription("Publication of Los Heraldos Negros");
 
 
-        System.out.println("Cargando autores ... ");
+        System.out.println("Loading authors ... ");
 
         Editor editor1 = new Editor();
 //        editor1.setId(1L);
         editor1.setFirstName("André");
         editor1.setLastName("Coyné");
         editor1.getEditorials().add(savedAlfaguara);
-
-
 
 
         editorService.save(editor1);
@@ -125,6 +123,6 @@ public class DataLoader implements CommandLineRunner {
 
         editorService.save(editor2);
 
-        System.out.println("Cargando editores ... ");
+        System.out.println("Loading editors ... ");
     }
 }
