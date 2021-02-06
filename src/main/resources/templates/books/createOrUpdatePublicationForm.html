@@ -1,0 +1,60 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'authors')}">
+
+<body>
+
+<h2>
+    <th:block th:if="${publication['new']}">New </th:block>
+    Publication
+</h2>
+
+<b>Book</b>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tr>
+        <td th:text="${book.name}" /></td>
+        <!--<td
+                th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></td>-->
+        <td th:text="${book.bookType}" /></td>
+        <td
+                th:text="${book.author?.firstName + ' ' + book.author?.lastName}" /></td>
+    </tr>
+</table>
+
+<form th:object="${publication}" class="form-horizontal" method="post">
+    <div class="form-group has-feedback">
+        <input
+                th:replace="~{fragments/inputField :: input ('Date', 'date', 'date')}"  />
+        <input
+                th:replace="~{fragments/inputField :: input ('Description', 'description', 'text')}" />
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="hidden" name="bookId" th:value="${book.id}" />
+            <button class="btn btn-default" type="submit">Add Publication</button>
+        </div>
+    </div>
+</form>
+
+<br />
+<b>Previous Publications</b>
+<table class="table table-striped">
+    <tr>
+        <th>Date</th>
+        <th>Description</th>
+    </tr>
+    <tr th:if="${!publication['new']}" th:each="publication : ${book.publications}">
+        <td th:text="${#temporals.format(publication.date, 'yyyy-MM-dd')}" /></td>
+        <td th:text=" ${publication.description}" /></td>
+    </tr>
+</table>
+
+</body>
+</html>

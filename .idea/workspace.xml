@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding model attributes for BookController">
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding builder pattern to booktype">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdatePublicationForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +34,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -515,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612590871028</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="adding builder pattern to booktype">
+      <created>1612590982061</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612590982061</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added BookTypeService" />
     <MESSAGE value="added interfaces and implementations" />
     <MESSAGE value="adding editorials to editors" />
     <MESSAGE value="fixed broken links" />
@@ -556,7 +563,8 @@
     <MESSAGE value="fixed find by like" />
     <MESSAGE value="added create and update author" />
     <MESSAGE value="adding model attributes for BookController" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding model attributes for BookController" />
+    <MESSAGE value="adding builder pattern to booktype" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding builder pattern to booktype" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -620,10 +628,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612590874790">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612590984688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612590874790" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612590984688" />
     <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612323438269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
