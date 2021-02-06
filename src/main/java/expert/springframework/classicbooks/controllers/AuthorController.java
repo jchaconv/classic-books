@@ -53,7 +53,7 @@ public class AuthorController {
         }
 
         //find authors by lastName
-        List<Author> authorList = authorService.findAllByLastNameLike(author.getLastName());
+        List<Author> authorList = authorService.findAllByLastNameLike("%" + author.getLastName() + "%");
 
         if (authorList.isEmpty()) {
             result.rejectValue("lastName", "notFound", "not found");
