@@ -21,7 +21,11 @@ public class Book extends BaseEntity {
         this.name = name;
         this.bookType = bookType;
         this.author = author;
-        this.publications = publications;
+
+        if (publications == null || publications.size() > 0) {
+            this.publications = publications;
+        }
+
     }
 
     @Column(name = "name")

@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added banner to the project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/formatters/BookTypeFormatter.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added formatter of bookType">
+      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/PublicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/authors/authorDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/authors/authorDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611855328498</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Refactor Services to a common Interface.">
-      <created>1611930502358</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1611930502358</updated>
     </task>
     <task id="LOCAL-00005" summary="Implement Map Based Services">
       <created>1611932789692</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612832757838</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="added formatter of bookType">
+      <created>1612836533060</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1612836533060</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new image" />
     <MESSAGE value="updated base entity with jpa annotations" />
     <MESSAGE value="updated owner with JPA entity mappings" />
     <MESSAGE value="updated Editor to use JPA" />
@@ -556,18 +555,19 @@
     <MESSAGE value="adding forms" />
     <MESSAGE value="adding forms of books" />
     <MESSAGE value="added banner to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="added banner to the project" />
+    <MESSAGE value="added formatter of bookType" />
+    <option name="LAST_COMMIT_MESSAGE" value="added formatter of bookType" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612835276089">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser" timestamp="1612836666703">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612835276089" />
-    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823986647" />
+    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612836666703" />
     <state x="391" y="174" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612219504836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -625,10 +625,10 @@
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
     <state x="1625" y="-278" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823835668" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612832759366">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612836547969">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612832759366" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612836547969" />
     <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612822778187">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
