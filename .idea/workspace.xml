@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding forms">
-      <change afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/controllers/BookControllerTest.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding forms of books">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,13 +170,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611855328498</updated>
-    </task>
-    <task id="LOCAL-00002" summary="adding POJOs. Closes #2.">
-      <created>1611889759408</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1611889759408</updated>
     </task>
     <task id="LOCAL-00003" summary="Implement interfaces for services">
       <created>1611890867136</created>
@@ -518,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612591544790</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="adding forms of books">
+      <created>1612831069154</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1612831069154</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -534,7 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding editorials to editors" />
     <MESSAGE value="fixed broken links" />
     <MESSAGE value="new image" />
     <MESSAGE value="updated base entity with jpa annotations" />
@@ -559,7 +554,8 @@
     <MESSAGE value="adding model attributes for BookController" />
     <MESSAGE value="adding builder pattern to booktype" />
     <MESSAGE value="adding forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding forms" />
+    <MESSAGE value="adding forms of books" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding forms of books" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -579,25 +575,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1877" height="255" key="GridCell.Tab.0.bottom" timestamp="1612825662940">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1303" height="178" key="GridCell.Tab.0.bottom" timestamp="1612831364048">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1260" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1303" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612831364048" />
     <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1877" height="255" key="GridCell.Tab.0.center" timestamp="1612825662940">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1303" height="178" key="GridCell.Tab.0.center" timestamp="1612831364047">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1260" height="143" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1303" height="178" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612831364047" />
     <state width="1877" height="255" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1877" height="255" key="GridCell.Tab.0.left" timestamp="1612825662940">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1303" height="178" key="GridCell.Tab.0.left" timestamp="1612831364047">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1260" height="143" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175966" />
+    <state width="1303" height="178" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612831364047" />
     <state width="1877" height="255" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1877" height="255" key="GridCell.Tab.0.right" timestamp="1612825662940">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1303" height="178" key="GridCell.Tab.0.right" timestamp="1612831364047">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1260" height="143" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1303" height="178" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612831364047" />
     <state width="1877" height="255" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
     <state width="1877" height="415" key="GridCell.Tab.1.bottom" timestamp="1612825373015">
       <screen x="1366" y="-304" width="1920" height="1040" />
@@ -628,10 +624,10 @@
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
     <state x="1625" y="-278" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823835668" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612591546576">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612831074780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612591546576" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612831074780" />
     <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612822778187">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
