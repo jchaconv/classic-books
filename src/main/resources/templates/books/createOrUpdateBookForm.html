@@ -4,33 +4,33 @@
 <body>
 
 <h2>
-    <th:block th:if="${book['new']}">New </th:block>
+    <th:block th:if="${book['new']}">New</th:block>
     Book
 </h2>
 <form th:object="${book}" class="form-horizontal" method="post">
-    <input type="hidden" name="id" th:value="*{id}" />
+    <input type="hidden" name="id" th:value="*{id}"/>
     <div class="form-group has-feedback">
         <div class="form-group">
             <label class="col-sm-2 control-label">Author</label>
             <div class="col-sm-10">
-                <span th:text="${book.author?.firstName + ' ' + book.author?.lastName}" />
+                <span th:text="${book.author?.firstName + ' ' + book.author?.lastName}"/>
             </div>
         </div>
         <input
-                th:replace="~{fragments/inputField :: input ('Name', 'name', 'text')}" />
+                th:replace="~{fragments/inputField :: input ('Name', 'name', 'text')}"/>
 
         <!--<input
                 th:replace="~{fragments/inputField :: input ('Birth Date', 'birthDate', 'date')}" />-->
 
-        <input
-                th:replace="~{fragments/selectField :: select ('Type', 'bookType', ${types})}" />
+        <input th:replace="~{fragments/selectField :: select ('Type', 'bookType', ${types})}"/>
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button
                     th:with="text=${book['new']} ? 'Add Book' : 'Update Book'"
                     class="btn btn-default" type="submit" th:text="${text}">Add
-                Book</button>
+                Book
+            </button>
         </div>
     </div>
 </form>

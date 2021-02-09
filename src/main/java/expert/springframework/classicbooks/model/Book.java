@@ -11,10 +11,18 @@ import java.util.Set;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 @Entity
 @Table(name = "books")
 public class Book extends BaseEntity {
+
+    @Builder
+    public Book(Long id, String name, BookType bookType, Author author, Set<Publication> publications) {
+        super(id);
+        this.name = name;
+        this.bookType = bookType;
+        this.author = author;
+        this.publications = publications;
+    }
 
     @Column(name = "name")
     private String name;
@@ -29,5 +37,6 @@ public class Book extends BaseEntity {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "book")
     private Set<Publication> publications = new HashSet<>();
+
 
 }

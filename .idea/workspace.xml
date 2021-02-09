@@ -19,10 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding builder pattern to booktype">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdatePublicationForm.html" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="adding forms">
+      <change afterPath="$PROJECT_DIR$/src/test/java/expert/springframework/classicbooks/controllers/BookControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/BookType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/books/createOrUpdateBookForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +36,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,19 +71,19 @@
       <recent name="expert.springframework.classicbooks.services.springdatajpa" />
       <recent name="expert.springframework.classicbooks.services.map" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
+      <recent name="expert.springframework.classicbooks.services" />
+      <recent name="expert.springframework.classicbooks.model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\templates" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\static\resources" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
-      <recent name="expert.springframework.classicbooks.services" />
-      <recent name="expert.springframework.classicbooks.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ClassicBooksApplication">
@@ -93,6 +96,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in classic-books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthorControllerTest.initUpdateAuthorForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classic-books" />
       <extension name="coverage">
         <pattern>
@@ -121,40 +132,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
-      <option name="METHOD_NAME" value="initUpdateAuthorForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthorControllerTest.processUpdateAuthorForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classic-books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.AuthorControllerTest" />
-      <option name="METHOD_NAME" value="processUpdateAuthorForm" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClassicBooksApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classic-books" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="expert.springframework.classicbooks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks" />
-      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.ClassicBooksApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.BookControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerTest.initCreationForm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classic-books" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="expert.springframework.classicbooks.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="expert.springframework.classicbooks.controllers" />
+      <option name="MAIN_CLASS_NAME" value="expert.springframework.classicbooks.controllers.BookControllerTest" />
+      <option name="METHOD_NAME" value="initCreationForm" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClassicBooksApplication" />
+        <item itemvalue="JUnit.All in classic-books" />
+        <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.initCreationForm" />
         <item itemvalue="JUnit.AuthorControllerTest" />
-        <item itemvalue="JUnit.AuthorControllerTest.processUpdateAuthorForm" />
-        <item itemvalue="JUnit.AuthorControllerTest.initUpdateAuthorForm" />
-        <item itemvalue="JUnit.ClassicBooksApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -179,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611855328498</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial project add.">
-      <created>1611855583999</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1611855583999</updated>
     </task>
     <task id="LOCAL-00002" summary="adding POJOs. Closes #2.">
       <created>1611889759408</created>
@@ -523,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612590982061</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="adding forms">
+      <created>1612591544790</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1612591544790</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added interfaces and implementations" />
     <MESSAGE value="adding editorials to editors" />
     <MESSAGE value="fixed broken links" />
     <MESSAGE value="new image" />
@@ -564,18 +558,19 @@
     <MESSAGE value="added create and update author" />
     <MESSAGE value="adding model attributes for BookController" />
     <MESSAGE value="adding builder pattern to booktype" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding builder pattern to booktype" />
+    <MESSAGE value="adding forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding forms" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="256" width="521" height="406" key="#Notifications/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891664167" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1612590935979">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser" timestamp="1612823986647">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612590935979" />
-    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612228535525" />
+    <state x="2052" y="-204" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823986647" />
     <state x="391" y="174" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1612219504836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -584,58 +579,63 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1323" height="138" key="GridCell.Tab.0.bottom" timestamp="1612589847668">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="255" key="GridCell.Tab.0.bottom" timestamp="1612825662940">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612589847668" />
-    <state width="1877" height="485" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612589783574" />
-    <state width="1323" height="138" key="GridCell.Tab.0.center" timestamp="1612589847667">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1260" height="143" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
+    <state width="1877" height="255" key="GridCell.Tab.0.center" timestamp="1612825662940">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612589847667" />
-    <state width="1877" height="485" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612589783573" />
-    <state width="1323" height="138" key="GridCell.Tab.0.left" timestamp="1612589847667">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1260" height="143" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1877" height="255" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
+    <state width="1877" height="255" key="GridCell.Tab.0.left" timestamp="1612825662940">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612589847667" />
-    <state width="1877" height="485" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612589783573" />
-    <state width="1323" height="138" key="GridCell.Tab.0.right" timestamp="1612589847667">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1260" height="143" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175966" />
+    <state width="1877" height="255" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
+    <state width="1877" height="255" key="GridCell.Tab.0.right" timestamp="1612825662940">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
-    <state width="1323" height="138" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612589847667" />
-    <state width="1877" height="485" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612589783573" />
-    <state width="1323" height="268" key="GridCell.Tab.1.bottom" timestamp="1612586728458">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1260" height="143" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612825175967" />
+    <state width="1877" height="255" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
+    <state width="1877" height="415" key="GridCell.Tab.1.bottom" timestamp="1612825373015">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state width="1323" height="268" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728458" />
-    <state width="1323" height="268" key="GridCell.Tab.1.center" timestamp="1612586728457">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="415" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
+    <state width="1877" height="415" key="GridCell.Tab.1.center" timestamp="1612825373015">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state width="1323" height="268" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
-    <state width="1323" height="268" key="GridCell.Tab.1.left" timestamp="1612586728457">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="415" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
+    <state width="1877" height="415" key="GridCell.Tab.1.left" timestamp="1612825373015">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state width="1323" height="268" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
-    <state width="1323" height="268" key="GridCell.Tab.1.right" timestamp="1612586728457">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="415" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
+    <state width="1877" height="415" key="GridCell.Tab.1.right" timestamp="1612825373015">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state width="1323" height="268" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1877" height="415" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="441" y="96" key="RollbackChangesDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1611891580472" />
-    <state x="184" y="18" key="SettingsEditor" timestamp="1612280403161">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1625" y="-278" key="SettingsEditor" timestamp="1612823835668">
+      <screen x="1366" y="-304" width="1920" height="1040" />
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612590984688">
+    <state x="1625" y="-278" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823835668" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612591546576">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612590984688" />
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612323438269">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612591546576" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612822778187">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612323438269" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612822778187" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

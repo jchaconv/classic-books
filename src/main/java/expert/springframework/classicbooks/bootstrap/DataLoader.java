@@ -39,17 +39,17 @@ public class DataLoader implements CommandLineRunner {
     }
 
     private void loadData() {
-        BookType novela = new BookType();
-        novela.setName("Novel");
-        BookType savedNovelaBookType = bookTypeService.save(novela);
+        BookType novel = new BookType();
+        novel.setName("Novel");
+        BookType savedNovelBookType = bookTypeService.save(novel);
 
         BookType romance = new BookType();
-        novela.setName("Romance");
+        romance.setName("Romance");
         BookType savedRomanceBookType = bookTypeService.save(romance);
 
-        BookType poesia = new BookType();
-        novela.setName("Poetry");
-        BookType savedPoesiaBookType = bookTypeService.save(poesia);
+        BookType poetry = new BookType();
+        poetry.setName("Poetry");
+        BookType savedPoetryBookType = bookTypeService.save(poetry);
 
         Editorial alfaguara = new Editorial();
         alfaguara.setDescription("Alfaguara");
@@ -73,7 +73,7 @@ public class DataLoader implements CommandLineRunner {
         author1.setTelephone("55559-9632-1");
 
         Book mariosBook = new Book();
-        mariosBook.setBookType(savedNovelaBookType);
+        mariosBook.setBookType(savedNovelBookType);
         mariosBook.setAuthor(author1);
         //mariosBook.setPublicationDate(LocalDate.now());
         mariosBook.setName("La ciudad y los perros");
@@ -90,7 +90,7 @@ public class DataLoader implements CommandLineRunner {
         author2.setTelephone("444259035566");
 
         Book cesarsBook = new Book();
-        cesarsBook.setBookType(savedPoesiaBookType);
+        cesarsBook.setBookType(savedPoetryBookType);
         cesarsBook.setAuthor(author2);
         //cesarsBook.setPublicationDate(LocalDate.now());
         cesarsBook.setName("Los heraldos negros");

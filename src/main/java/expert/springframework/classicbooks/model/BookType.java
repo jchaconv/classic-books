@@ -22,4 +22,14 @@ public class BookType extends BaseEntity {
 
     @Column(name = "name")
     private String name;
+
+    /*Al final si tuve que implementar este método por el template
+    createOrUpdateBookForm.html, porque su llamada a esta clase es diferente
+    que la utilizada en authorDetails.html*/
+    @Override
+    public String toString() {
+        return name;
+    }
+
+
 }
