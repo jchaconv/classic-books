@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added formatter of bookType">
-      <change afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/PublicationController.java" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added publication controller and mappings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +34,8 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -68,19 +68,19 @@
       <recent name="expert.springframework.classicbooks.services.springdatajpa" />
       <recent name="expert.springframework.classicbooks.services.map" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
-      <recent name="expert.springframework.classicbooks.services" />
-      <recent name="expert.springframework.classicbooks.model" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\templates" />
       <recent name="D:\jchaconv\springframework5\classic-books\src\main\resources\static\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="expert.springframework.classicbooks.services.springdatajpa" />
+      <recent name="expert.springframework.classicbooks.services" />
+      <recent name="expert.springframework.classicbooks.model" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ClassicBooksApplication">
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611855328498</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Implement Map Based Services">
-      <created>1611932789692</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1611932789692</updated>
     </task>
     <task id="LOCAL-00006" summary="Create index page and controller">
       <created>1611933180450</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612836533060</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="added publication controller and mappings">
+      <created>1612837693579</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1612837693579</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated base entity with jpa annotations" />
     <MESSAGE value="updated owner with JPA entity mappings" />
     <MESSAGE value="updated Editor to use JPA" />
     <MESSAGE value="added publication entity" />
@@ -556,7 +555,8 @@
     <MESSAGE value="adding forms of books" />
     <MESSAGE value="added banner to the project" />
     <MESSAGE value="added formatter of bookType" />
-    <option name="LAST_COMMIT_MESSAGE" value="added formatter of bookType" />
+    <MESSAGE value="added publication controller and mappings" />
+    <option name="LAST_COMMIT_MESSAGE" value="added publication controller and mappings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -576,45 +576,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="440" y="153" key="FileChooserDialogImpl/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612220449517" />
-    <state width="1312" height="85" key="GridCell.Tab.0.bottom" timestamp="1612835823453">
+    <state width="1306" height="112" key="GridCell.Tab.0.bottom" timestamp="1613078649753">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="85" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612835823453" />
+    <state width="1306" height="112" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613078649753" />
     <state width="1877" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1312" height="85" key="GridCell.Tab.0.center" timestamp="1612835823453">
+    <state width="1306" height="112" key="GridCell.Tab.0.center" timestamp="1613078649752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="85" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612835823453" />
+    <state width="1306" height="112" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613078649752" />
     <state width="1877" height="255" key="GridCell.Tab.0.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1312" height="85" key="GridCell.Tab.0.left" timestamp="1612835823453">
+    <state width="1306" height="112" key="GridCell.Tab.0.left" timestamp="1613078649752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="85" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612835823453" />
+    <state width="1306" height="112" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613078649752" />
     <state width="1877" height="255" key="GridCell.Tab.0.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1312" height="85" key="GridCell.Tab.0.right" timestamp="1612835823453">
+    <state width="1306" height="112" key="GridCell.Tab.0.right" timestamp="1613078649752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1312" height="85" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612835823453" />
+    <state width="1306" height="112" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613078649752" />
     <state width="1877" height="255" key="GridCell.Tab.0.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825662940" />
-    <state width="1877" height="415" key="GridCell.Tab.1.bottom" timestamp="1612825373015">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1877" height="415" key="GridCell.Tab.1.bottom" timestamp="1612838823893">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728458" />
+    <state width="1877" height="415" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612838823893" />
     <state width="1877" height="415" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
-    <state width="1877" height="415" key="GridCell.Tab.1.center" timestamp="1612825373015">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1877" height="415" key="GridCell.Tab.1.center" timestamp="1612838823892">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1877" height="415" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612838823892" />
     <state width="1877" height="415" key="GridCell.Tab.1.center/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
-    <state width="1877" height="415" key="GridCell.Tab.1.left" timestamp="1612825373015">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1877" height="415" key="GridCell.Tab.1.left" timestamp="1612838823892">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1877" height="415" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612838823892" />
     <state width="1877" height="415" key="GridCell.Tab.1.left/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
-    <state width="1877" height="415" key="GridCell.Tab.1.right" timestamp="1612825373015">
-      <screen x="1366" y="-304" width="1920" height="1040" />
+    <state width="1877" height="415" key="GridCell.Tab.1.right" timestamp="1612838823893">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="268" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612586728457" />
+    <state width="1877" height="415" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612838823893" />
     <state width="1877" height="415" key="GridCell.Tab.1.right/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612825373015" />
     <state x="441" y="96" key="RollbackChangesDialog" timestamp="1611891580472">
       <screen x="0" y="0" width="1366" height="728" />
@@ -625,14 +625,14 @@
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
     <state x="1625" y="-278" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823835668" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612836547969">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612837695684">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612836547969" />
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612822778187">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612837695684" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1613078029240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612822778187" />
+    <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613078029240" />
     <state x="413" y="114" key="extract.method.dialog" timestamp="1612156225412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -119,7 +119,7 @@ public class DataLoader implements CommandLineRunner {
 //        editor2.setId(2L);
         editor2.setFirstName("Juan");
         editor2.setLastName("Espejo");
-        editor1.getEditorials().add(savedAtalanta);
+        editor2.getEditorials().add(savedAtalanta);
 
         editorService.save(editor2);
 
