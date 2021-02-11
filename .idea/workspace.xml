@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added publication controller and mappings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/bootstrap/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editors/index.html" afterDir="false" />
+    <list default="true" id="3783d2a6-c1e5-45b3-8479-7a132ef13efb" name="Default Changelist" comment="added lists view for editors">
+      <change beforePath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/expert/springframework/classicbooks/controllers/EditorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611855328498</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Create index page and controller">
-      <created>1611933180450</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1611933180450</updated>
     </task>
     <task id="LOCAL-00007" summary="adding editors page and controller">
       <created>1611933506104</created>
@@ -515,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612837693579</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="added lists view for editors">
+      <created>1613079221642</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1613079221643</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +529,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated owner with JPA entity mappings" />
     <MESSAGE value="updated Editor to use JPA" />
     <MESSAGE value="added publication entity" />
     <MESSAGE value="added spring data jpa repositories" />
@@ -556,7 +553,8 @@
     <MESSAGE value="added banner to the project" />
     <MESSAGE value="added formatter of bookType" />
     <MESSAGE value="added publication controller and mappings" />
-    <option name="LAST_COMMIT_MESSAGE" value="added publication controller and mappings" />
+    <MESSAGE value="added lists view for editors" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lists view for editors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="568" y="256" width="521" height="406" key="#Notifications" timestamp="1611891664167">
@@ -625,10 +623,10 @@
     </state>
     <state x="184" y="18" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612280403161" />
     <state x="1625" y="-278" key="SettingsEditor/0.0.1366.728/1366.-304.1920.1040@1366.-304.1920.1040" timestamp="1612823835668" />
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1612837695684">
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1613079225044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1612837695684" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-304.1920.1040@0.0.1366.728" timestamp="1613079225044" />
     <state x="405" y="126" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1613078029240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
